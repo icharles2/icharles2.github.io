@@ -15,8 +15,16 @@
   * 3.conditon in which to increment.. i += 2
   * All these conditions will go into parenthesis seperated by a ;
   */
-  
-  const petNames = ['roofus', 'kiko', 'prince', 'jon jon'];
+  //looping through numbers forward
+  for(let i = 1; i <= 100; i++){
+   console.log(i); //=> prints numbers 1 to 100
+  }
+  //looping through numbers backwards
+  for(let i = 100; i >= 1; i--){
+   console.log(i);//=>prints numbers 100 to 1
+  }
+  //looping through array
+  var petNames = ['roofus', 'kiko', 'prince', 'jon jon'];
   
   for(let i = 0; i < petNames.length; i++){
       console.log(petNames[i]); //prints all the names in the petNames array
@@ -30,9 +38,12 @@
   // for in loop //
   /**
    * // for in loops are good for looping over objects //
+   * there are 2 steps to defining a for in loop:
+   * 1. How will you refer to your keys?
+   * 2. Which Object do you want to loop over?
    */
    
-   const athletes = {
+   var athletes = {
        kobe: 'Kobe Bryant #24',
        shaq: 'Shaquille O\'neal #34',
        lebron: 'Lebron James #23',
@@ -61,7 +72,7 @@ for(let player in athletes){
      * you then create a conditon that while being true will continue to execute
      * the code block inside of the while loop
      */
-     const printNumbers = 0;
+     var printNumbers = 0;
      while(printNumbers < 100){
          printNumbers += 2;
          console.log(printNumbers); //prints all even numbers

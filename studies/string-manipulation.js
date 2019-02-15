@@ -9,11 +9,11 @@
  */
  
  // Concatenation //
- const firstName = 'Gucci';
- const lastName = 'Monzilla';
+ var firstName = 'Gucci';
+ var lastName = 'Monzilla';
  console.log(firstName + ' ' + lastName); // => prints Gucci Monzilla
  
- const greeting = 'Hello,';
+ var greeting = 'Hello,';
  greeting += ' how yall doing?';
  console.log(greeting);// => Hello, how yall doing?
  
@@ -44,14 +44,14 @@
  //returns the index within the string of the first occurence of the specific value
  //returns -1 if the value is not found
  //case sensitive
- const heSaid = 'where are all the groceries i just bought ?';
+ var heSaid = 'where are all the groceries i just bought ?';
  heSaid.indexOf('groceries'); // 18
  heSaid.indexOf('food'); // -1
  
  // includes //
  //determines if one string includes another returning a boolean
  //case sensitive
- const words = 'what are we doing today';
+ var words = 'what are we doing today';
  words.includes('are');// => true
  words.includes('make');// => false
  
@@ -64,5 +64,5 @@
  
  // replace //
  //returns a new string with all or some matches replaced
- const myWords = words.replace(/doing/gi, 'making');
+ var myWords = words.replace(/doing/gi, 'making');
  console.log(myWords);//what are we making today

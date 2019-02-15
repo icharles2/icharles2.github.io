@@ -3,7 +3,18 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function triangles() {
+function triangles(num) {
+//console.log(num);
+//create a variable to store a empty string
+let myTriangle = '';
+//loop through the num parameter
+for(let i = 0; i < num; i++){
+  //console.log(i);
+  //add # to myTriangle each iteration
+ myTriangle += '#';
+ //print # at each iteration
+ console.log(myTriangle);
+}
 
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -11,6 +22,26 @@ function triangles() {
 ////////////////////////////////////////////////////////////////////////////////
 
 function fizzBuzz() {
+  //create a loop to print numbers
+  for(let i = 1; i <= 15; i++){
+    //console.log(i);
+    //if number is divisible by 3 and 15 print fizzbuzz
+    if(i % 3 === 0 && i % 5 === 0){
+      console.log('fizzbuzz');
+    }
+    //if number is only divisible by 3 print fizz
+    else if(i % 3 === 0){
+      console.log('fizz');
+    }
+    //if number is only divisible by 5 print buzz
+    else if(i % 5 === 0){
+      console.log('buzz');
+    }
+    //otherwise just print the number
+    else{
+      console.log(i);
+    }
+  }
   
 }
 
@@ -18,8 +49,20 @@ function fizzBuzz() {
 // drawChessboard //////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function drawChessboard() {
-
+function drawChessboard(number) {
+// console.log(param);
+//create a variable to store an empty string
+var board = '';
+//loop through parameter
+for(var i = 0; i < number; i++){
+  //console.log(i);
+  for(var a = 0; a < number; a++){
+    //console.log(a);
+    board += (a % 2 === 0) === (i % 2 === 0)? ' ': '#';
+  }
+      board += '\n';
+}
+  console.log(board);
 }
 
 ////////////////////////////////////////////////////////////////////////////////

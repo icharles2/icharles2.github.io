@@ -67,3 +67,14 @@
    they are defined.
  */
  
+//function without a parameter//
+function print() {
+ console.log(' what it do');
+}
+/*
+we can optionally give our function a parameter, but it isn't requried for all 
+of them. Every function doesn't have to return anything. if we call this print
+function above it will still print the string because the function will still 
+execute the code block.
+*/
+
