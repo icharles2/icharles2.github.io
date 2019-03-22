@@ -2,32 +2,82 @@
 // min /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function min() {
-
+function min(num1, num2) {
+//return the smallest of the two numbers
+// if(num1 < num2){
+//   return num1;
+// }
+//   return num2;
+return num1 < num2? num1: num2;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // isEven //////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function isEven() {
-
+function isEven(number) {
+  //base case
+  //if number equals 0 it is true
+  if(number === 0){
+    return true;
+  }
+  //base case
+  //if number equals 1 it is false
+  else if(number === 1){
+    return false;
+  }
+  //recursive case
+  //if number is negative make it positive and call itself
+  else if(number < 0){
+    return isEven(number * -1);
+  }
+  else{
+    //recursive case
+    //else just subtract the number by 2 until its either 0 or 1
+    return isEven(number - 2);
+  }   
+    
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
-
+function countChars(string, char) {
+  //console.log(string, char);
+  //create a variable to hold the current count
+let count = 0;
+//iterate through string to get each character
+for(let i = 0; i < string.length; i++){
+  //if the character in the string matches the char parameter increment count
+  if(string[i] === char){
+    //add 1 each time the condition is true
+    count++;
+  }
+}
+return count;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
-
+function countBs(string) {
+  //create a variable to keep track of the count
+  let count = 0;
+  //create a variable to represent the letter b
+  let b = 'b';
+  //create a variable to represent capitalized B
+  let bigB = b.toUpperCase();
+  //iterate through string to get each character
+  for(let i = 0; i < string.length; i++){
+  //if the characters in the string matches a capitalized B count it
+    if(string[i] === bigB){
+  //add one to count each time the condition is true
+      count++;
+    }
+  }
+  return count;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

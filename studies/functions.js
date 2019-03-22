@@ -75,6 +75,10 @@ function print() {
 we can optionally give our function a parameter, but it isn't requried for all 
 of them. Every function doesn't have to return anything. if we call this print
 function above it will still print the string because the function will still 
-execute the code block.
+execute the code block. If a function takes just one parameter and you pass it 
+more than one argument it will just ignore the extra arguments. But if you pass
+it less arguments than parameters you have it will assign undefined to those
+parameters. if you assign a value to a parameter that value will replace the 
+argument if one is not given.
 */
 

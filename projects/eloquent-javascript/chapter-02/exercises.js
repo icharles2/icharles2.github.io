@@ -54,10 +54,13 @@ function drawChessboard(number) {
 //create a variable to store an empty string
 var board = '';
 //loop through parameter
+//this first loop is for every new line
 for(var i = 0; i < number; i++){
   //console.log(i);
+  //this second loop is for the characters on the line
   for(var a = 0; a < number; a++){
     //console.log(a);
+    //add a empty space if both conditions are true otherwise add a #
     board += (a % 2 === 0) === (i % 2 === 0)? ' ': '#';
   }
       board += '\n';

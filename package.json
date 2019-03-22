@@ -1,0 +1,30 @@
+{
+  "name": "lodown-icharles2",
+  "version": "1.0.2",
+  "description": "An npm functional programming library project",
+  "main": "index.js",
+  "dependencies": {
+    "lodown-iancharles2": "^1.0.7",
+    "lodown-icharles2": "^1.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "i": "^0.3.6",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.1",
+    "sinon": "^7.2.4"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- test/ -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icharles2/icharles2.github.io.git"
+  },
+  "author": "ian charles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icharles2/icharles2.github.io/issues"
+  },
+  "homepage": "https://github.com/icharles2/icharles2.github.io#readme"
+}
